@@ -15,7 +15,7 @@ if __name__ == '__main__':
     )
 
     starter = time.time()
-    Model.fit(epoch=60)
+    Model.fit(epoch=40)
     with open('../data/Time.txt', 'w') as Fout:
         Fout.write('{} seconds'.format(time.time() - starter))
     with open('../data/Embeddings.pkl', 'wb') as Fout:

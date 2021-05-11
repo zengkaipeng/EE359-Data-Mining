@@ -38,7 +38,7 @@ if __name__ == '__main__':
         nevsam=30, p=0.5, q=2, verbose=True
     )
 
-    Model.fit(epoch=60)
+    Model.fit(epoch=40)
 
     Positive_Prob = Model.Predict(Test_Edges)
     Neg_Prob = Model.Predict(Test_Neg)
